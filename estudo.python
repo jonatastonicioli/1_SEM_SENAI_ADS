@@ -1,3 +1,4 @@
 Python
 
-Sintaxe do range (início, fim, passo)
+for i in
+range (início, fim, passo) o primeiro valor entra; o último valor nunca entra
