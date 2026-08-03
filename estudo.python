@@ -7,3 +7,40 @@ range (início, fim, passo) o primeiro valor entra; o último valor nunca entra
 
 lista.append('novo item') -- adicionar nova item a lista
 len(nome_da_lista)  -- tamanho da lista
+
+# Exercício 13
+
+# Peça ao usuário para digitar 8 números e armazene-os em uma lista.
+# Depois mostre:
+# Todos os números digitados.
+# A soma de todos os números.
+# Quantos números são positivos.
+# Quantos números são negativos.
+# Quantos números são iguais a zero.
+
+soma = 0
+contadorMaior=0
+contadorMenor=0
+contadorIgual=0
+
+listanum = []
+
+for i in range (0,8):
+
+    valor = int(input(f"Digite o valor {i}:")) #fstring para mudar o i
+    listanum.append(valor) 
+    soma = soma + valor
+    if valor>0: contadorMaior = contadorMaior +1
+    if valor<0: contadorMenor = contadorMenor + 1
+    if valor==0: contadorIgual= contadorIgual+1
+    
+    
+print("A lista é: ",listanum)
+print("A soma dos valores da lista é: ", soma)
+
+
+
+    
+
+
+
