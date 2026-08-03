@@ -2,3 +2,8 @@ Python
 
 for i in
 range (início, fim, passo) o primeiro valor entra; o último valor nunca entra
+
+--- Lista
+
+lista.append('novo item') -- adicionar nova item a lista
+len(nome_da_lista)  -- tamanho da lista
