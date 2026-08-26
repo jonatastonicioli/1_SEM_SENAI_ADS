@@ -1,0 +1,6 @@
+numero = int(input("Digite o número da ordem de produção: "))
+nome = (input("Digite o nome da peça: "))
+identificador = (input("Digite o nome da peça: "))
+
+#print(f"OP {numero} {nome} {identificador}")
+print("OP {0} {1} {2}".format(numero, nome, identificador))
