@@ -1,0 +1,29 @@
+print("Bem vindo ao sistema de gerenciamento de finanças pessoais!\nVocê irá cadastrar receitas e despesas, calcular o saldo e gerar um relatório detalahado")
+
+receita1 = float(input("Digite a receita 1: "))
+receita2 = float(input("Digite a receita 2: "))
+receita3 = float(input("Digite a receita 3: "))
+despesa1 = float(input("Digite a despesa 1: "))
+despesa2 = float(input("Digite a despesa 2: "))
+despesa3 = float(input("Digite a despesa 3: "))
+
+totalReceita = receita1 + receita2 + receita3
+totalDespesa = despesa1 + despesa2 + despesa3
+
+soma =  totalReceita + totalDespesa
+saldo = totalReceita - totalDespesa
+
+pDespesa1 =  (despesa1 / totalDespesa) * 100
+pDespesa2 =  (despesa2 / totalDespesa) * 100
+pDespesa3 =  (despesa3 / totalDespesa) * 100
+
+pReceita1 =  (receita1 / totalReceita) * 100
+pReceita2 =  (receita2 / totalReceita) * 100
+pReceita3 =  (receita3 / totalReceita) * 100
+
+
+print(f"O total de receitas é: {totalReceita}")
+print(f"O total de despesas é: {totalDespesa}")
+print(f"O saldo final é de: {saldo}")
+print(f"O percentual das despesas em relação ao total das despesas são: Despesa 01  = {pDespesa1:.2f}%   Despesa 02  = {pDespesa2:.2f}%   Despesa 03  = {pDespesa3:.2f}%")
+print(f"O percentual das receitas em relação ao total das receitas são: Receita 01  = {pReceita1:.2f}%   Receita 02  = {pReceita2:.2f}%   Receita 03  = {pReceita3:.2f}%")
