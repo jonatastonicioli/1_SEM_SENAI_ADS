@@ -1,0 +1,38 @@
+h1{
+    color: rgb(2, 91, 133)
+    font-size= 30px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+Tipos de Seletores
+
+====TIPOS
+h1{
+
+}
+
+====CLASS, para elementos reutilizaveis 
+.box{
+
+}
+
+====ID, identificador unico
+#titulo{
+
+}
+
+====LISTA DE SELETORES
+
+h1,h2,p{
+    color: purple
+
+}
+
+====PSEUDOCLASSES
+
+button:hover{
+
+}
+
+==== 

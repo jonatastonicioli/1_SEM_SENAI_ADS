@@ -34,7 +34,6 @@ def print_calculadora():
 
     return a
 
-print(print_calculadora())
 
 def soma(a,b):
     return a+b
@@ -49,7 +48,7 @@ def multiplicar(a,b):
     return a*b
 
 def raiz(a):
-    return a**2
+    return a**(1/2)
 
 def potencia (a,b):
     return a**b
@@ -58,7 +57,8 @@ def porcentagem(a,b):
     return (a/b) * 100
 
 def pedir_1_numero():
-    return
+    a = int(input("Digite o número 1: "))
+    return a
 
 def pedir_2_numeros():
     a = int(input("Digite o número 1: "))
@@ -70,7 +70,7 @@ def printar_resultado(resultado):
     return print(f"O resultado é: {resultado}")
 
 def main():
-    print(print_calculadora)
+    print(print_calculadora())
 
     opcao = input("Digite a operação que vc quer realizar: ")
 
@@ -98,6 +98,9 @@ def main():
         case "por":
             num1,num2 = pedir_2_numeros()
             resultado = porcentagem(num1,num2)
+        case _: #default
+            resultado = "Operação Inválida"
+        
     
     printar_resultado(resultado)
 
